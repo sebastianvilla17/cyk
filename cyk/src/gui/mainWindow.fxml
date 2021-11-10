@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #3C3836;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="420.0" layoutY="267.0" mnemonicParsing="false" onAction="#evaluar" style="-fx-background-color: #83A589;" text="Evaluar" textFill="#f5f5f5">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="resultado" layoutX="61.0" layoutY="338.0" textFill="#d65d0e">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cadenatf" layoutX="378.0" layoutY="217.0" style="-fx-background-color: #d5c4a1;" />
+      <TextArea fx:id="gramativata" layoutX="61.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d5c4a1; -fx-border-color: #d5c4a1; -fx-control-inner-background: #d5c4a1;">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="resultado1" layoutX="419.0" layoutY="178.0" text="Cadena" textFill="#d65d0e">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="resultado11" layoutX="109.0" layoutY="66.0" text="Gramática" textFill="#d65d0e">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="58.0" text="-Recuerda no poner espacios en la produciones" textFill="WHITE" />
+      <Label layoutX="316.0" layoutY="80.0" text="-Separar las producciones multiples con |" textFill="WHITE" />
+      <Label layoutX="316.0" layoutY="100.0" text="- Escribir la producciones de la forma x -&gt; y" textFill="WHITE" />
+      <Label fx:id="resultado12" layoutX="322.0" layoutY="23.0" text="Recomendaciones" textFill="#d65d0e">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
