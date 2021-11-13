@@ -13,12 +13,20 @@ import com.google.common.collect.Multimap;
 public class Gramatica {
 
 	 private Multimap<String, String> gramatica; 
-     
+	
+	/**
+	 * Este método permite crear una gramática vacía.
+	 */
 	    public Gramatica(){
 	        gramatica = new ArrayListMultimap<>();
 	    }
 	    
-	    public Gramatica(String gram) throws FileNotFoundException, IOException{
+	/**
+	 * Este método permite crear una gramática con reglas definidas.
+	 * @param gram Una cadena con las reglas de la gramática.
+	 * @throws IOException Si el lector presenta alguna excepción.
+	 */
+	    public Gramatica(String gram) throws IOException{
 	        gramatica = new ArrayListMultimap<>();
 	        
 	        String regla;
@@ -44,11 +52,20 @@ public class Gramatica {
 	        b.close();
 	    }
 	    
+	/**
+	 * Este método añade una regla a la gramática.
+	 * @param key La clave a asignar.
+	 * @param value El valor a guardar.
+	 */
 	    public void addRule(String key, String value){
 	        gramatica.put(key, value);
 	    }
 	    
-	    // Devuelve los valores que pertenecen a la misma clave
+	/**
+	 * Este método obtiene los valores que pertenecen a una misma clave.
+	 * @param key La clave a buscar.
+	 * @return Una cadena con todos los valores que contenia la clave.
+	 */
 	    public String getValues(String key){
 	        String values = "";
 	        
@@ -64,6 +81,9 @@ public class Gramatica {
 	        return values;
 	    }
 
+	/**
+	 * Este método muestra en consola el contenido del mapa de la gramática.
+	 */
 	    public void showMapContent(){
 	        Iterator it = gramatica.keySet().iterator();
 	        while(it.hasNext()){
@@ -73,6 +93,10 @@ public class Gramatica {
 	        System.out.println();
 	    }
 	    
+	/**
+	 * Este metodo obtiene el mapa de la gramática.
+	 * @return El mapa de la gramática.
+	 */
 	    public Multimap<String, String> getMapContent(){
 	        return gramatica;
 	    }
