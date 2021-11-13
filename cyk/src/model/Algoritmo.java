@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Algoritmo {
 	
 	/**
-	 * Este metodo inicializa la matriz
+	 * Este método inicializa la matriz
 	 * @param miMatriz La matriz a inicializar.
 	 * @param palabra La cadena a probar.
 	 */
@@ -20,7 +20,7 @@ public class Algoritmo {
 	    }
 	 
 	/**
-	 * Este metodo muestra la matriz en consola.
+	 * Este método muestra la matriz en consola.
 	 * @param miMatriz La matriz a mostrar.
 	 */
 	public static void mostrarMatriz(ArrayList<ArrayList<String>> miMatriz){
@@ -38,11 +38,11 @@ public class Algoritmo {
 	    }
 	 
 	/**
-	 * Este metodo realiza el algoritmo CYK
+	 * Este método realiza el algoritmo CYK
 	 * @param miMatriz La matriz para verificar.
 	 * @param palabra La cadena a probar.
-	 * @param miGramatica La gramatica dada.
-	 * @return Si la palabra cumple con la gramatica dada.
+	 * @param miGramatica La gramática dada.
+	 * @return Si la palabra cumple con la gramática dada.
 	 */
 	public static boolean algoritmoCYK(ArrayList<ArrayList<String>> miMatriz, String palabra, Gramatica miGramatica){
 	        boolean pertenece = false;
@@ -84,11 +84,11 @@ public class Algoritmo {
 	 
 	
 	/**
-	 * Este metodo comprueba las combinaciones que cumplen con la gramatica.
+	 * Este método comprueba las combinaciones que cumplen con la gramática.
 	 * @param a .
 	 * @param b .
-	 * @param miGramatica La gramatica dada.
-	 * @return Una cadena con una combinacion.
+	 * @param miGramatica La gramática dada.
+	 * @return Una cadena con una combinación.
 	 */
 	 public static String comprobarCombinaciones(String a, String b, Gramatica miGramatica){
 	        String values = "";
@@ -129,7 +129,7 @@ public class Algoritmo {
 	    }
 	    
 	/**
-	 * Este metodo elimina los caracteres repetidos en la cadena dada.
+	* Este método elimina los caracteres repetidos en la cadena dada.
 	 * @param cadena La cadena a modificar.
 	 * @return La cadena sin caracteres repetidos.
 	 */
