@@ -85,8 +85,8 @@ public class Algoritmo {
 	
 	/**
 	 * Este método comprueba las combinaciones que cumplen con la gramática.
-	 * @param a .
-	 * @param b .
+	 * @param a valor a realizar la comprobacion
+	 * @param b valor a realizar la comprobacion
 	 * @param miGramatica La gramática dada.
 	 * @return Una cadena con una combinación.
 	 */
@@ -128,11 +128,11 @@ public class Algoritmo {
 	        return values;
 	    }
 	    
-	/**
-	* Este método elimina los caracteres repetidos en la cadena dada.
-	 * @param cadena La cadena a modificar.
-	 * @return La cadena sin caracteres repetidos.
-	 */
+		/**
+		* Este método elimina los caracteres repetidos en la cadena dada.
+		 * @param cadena La cadena a modificar.
+		 * @return La cadena sin caracteres repetidos.
+		 */
 	    public static String eliminarRepetidos(String cadena){
 	        String salida = "";
 	        CharSequence caracter = "";
