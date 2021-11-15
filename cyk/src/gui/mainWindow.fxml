@@ -43,6 +43,5 @@
             <Font name="Berlin Sans FB" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="316.0" layoutY="117.0" text="-Ingresar la gramatica sin espacios" textFill="WHITE" />
    </children>
 </Pane>
