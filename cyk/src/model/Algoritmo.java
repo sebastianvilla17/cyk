@@ -85,8 +85,8 @@ public class Algoritmo {
 	
 	/**
 	 * Este método comprueba las combinaciones que cumplen con la gramática.
-	 * @param a valor a realizar la comprobacion
-	 * @param b valor a realizar la comprobacion
+	 * @param a Valor a realizar la comprobacion.
+	 * @param b valor a realizar la comprobacion.
 	 * @param miGramatica La gramática dada.
 	 * @return Una cadena con una combinación.
 	 */
